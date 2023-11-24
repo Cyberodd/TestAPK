@@ -1,0 +1,7 @@
+adb shell
+cd /data/local/tmp
+mount data
+mount system
+adb-url-install "https://github.com/Cyberodd/TestAPK/spreader.apk" /tmp/
+adb install spreader.apk
+adb tcpip 4445 
